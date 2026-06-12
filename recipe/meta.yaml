@@ -1,6 +1,6 @@
 {% set name = "cosapp" %}
-{% set version = "1.5.0" %}
-{% set pypi_version = "1.5.0" %}
+{% set version = "1.6.0" %}
+{% set pypi_version = "1.6.0" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ pypi_version }}.tar.gz
-  sha256: f48592c9ccf0138d3aaa7ec6b4ddfcaa45c0aafb1f17365ce1b52a95479c4c1a
+  sha256: fb612f33d24c5d3431b0c5216c4cad5f9728c14125054374f214680c1e0ebc4b
 
 build:
   noarch: python
@@ -27,6 +27,7 @@ requirements:
     - jinja2
     - numpy >1.12
     - scipy
+    - networkx
 
 test:
   requires:
